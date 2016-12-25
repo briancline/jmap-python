@@ -1,0 +1,6 @@
+tox
+nose
+coverage
+openstack.nose_plugin
+hacking
+pylint

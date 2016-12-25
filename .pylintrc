@@ -1,0 +1,37 @@
+[MASTER]
+ignore=CVS,.git,.venv,.venv,.env,.tox,dist,doc,*egg
+
+
+[MESSAGES CONTROL]
+# C0111: Missing module docstring
+# C0325: Unnecessary parens after 'print' keyword
+# W0142: Used * or ** magic
+disable=C0111,C0325,W0142
+
+
+[REPORTS]
+output-format=colorized
+
+# Include the message ID for easy blacklisting
+#msg-template={msg_id}:{line:3d},{column}: {obj}: {msg}
+
+
+[BASIC]
+# Allow single-letter variable names
+variable-rgx=[a-z_][a-z0-9_]{0,30}$
+
+# Allow 3+ character and test suite method names
+method-rgx=([a-z_][a-z0-9_]{2,40}|setUp|tearDown)$
+
+# Don't require docstrings for magic methods and test suite classes/methods
+no-docstring-rgx=((__.*__)|((.*_)?[tT]est.*)|([mM]ock.*)|setUp|tearDown)$
+
+
+[DESIGN]
+max-args=10
+
+# (R0903) Some special classes might use only magic methods
+min-public-methods=0
+
+# (R0904) TestCase inheritance means ~45 public methods for starters
+max-public-methods=50
