@@ -2,9 +2,12 @@ jmap-python
 ===========
 
 .. image:: https://travis-ci.org/briancline/jmap-python.svg?branch=master
-    :target: https://travis-ci.org/briancline/jmap-python
+   :target: https://travis-ci.org/briancline/jmap-python
 
-A pure-Python library implementing the `JMAP protocol`_.
+.. image:: https://coveralls.io/repos/briancline/jmap-python/badge.svg
+   :target: https://coveralls.io/r/briancline/jmap-python
+
+A Python library implementing the `JMAP protocol`_.
 
 
 Installation

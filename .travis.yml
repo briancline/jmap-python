@@ -25,6 +25,10 @@ matrix:
 
 install:
   - pip install tox
+  - pip install coveralls
 
 script:
   - tox -e "${TOX_ENV}"
+
+after_success:
+  - '[[ "${TOX_ENV}" = "py27" ]] && coveralls'
