@@ -4,3 +4,4 @@ coverage
 openstack.nose_plugin
 hacking
 pylint
+requests-mock

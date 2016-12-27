@@ -1,9 +1,11 @@
 import setuptools
 
+import jmap
+
 
 setuptools.setup(
     name='jmap',
-    version='0.0.1',
+    version=jmap.VERSION,
     description='A pure-Python implementation of the JMAP protocol',
     author='Brian Cline',
     author_email='brian.cline@gmail.com',
